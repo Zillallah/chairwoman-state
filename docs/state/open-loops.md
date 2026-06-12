@@ -49,8 +49,10 @@
 - **Opened:** Heygen / Credit Quing thread
 - **Description:** 10 products are ready to ship per operator confirmation 2026-06-11. None are live for purchase. Smallest possible launch: the $7 Cease-the-Calls tripwire on a storefront with checkout + email delivery.
 - **Dispatch:** `docs/dispatches/2026-06-11-credit-quing-storefront-launch.md` — Gumroad recommended, Stan.store alternative
-- **Closing condition:** $7 Cease-the-Calls product live on Gumroad checkout. First transaction recorded. ChairWoman dashboard shows the sale under Eshu.
-- **Owner to close:** Heygen/Credit Quing thread + operator
+- **Update 2026-06-12:** Operator went with the **native Stripe checkout** built into chairwoman-v1 (NOT Gumroad). All 10 approved SKUs published & live (`published_products.live=true`, $7.00→$497.97), each with an API-created Stripe Price; checkout webhook secret stored (auto-delivery wired). **Bug found & fixed:** 4 stale "$46.97 …Kit" hollow twins from the June-3 packaging-only run were still `live` (cannibalizing the real SKUs, incl. a $46.97 "Greene Process Kit" undercutting the $497.97 flagship). `retirePriorPublished` only matched exact titles so the "…Kit"-suffixed twins survived. Retired (live=false) + options shelved. Storefront now reads exactly 10. **Stripe dashboard follow-up (operator):** archive the 4 stale Products in Stripe (names end in "Kit", $46.97) — functionally dead already since checkout filters live=true.
+- **Closing condition:** First real transaction recorded + auto-delivered (signed download + email). ChairWoman dashboard shows the sale under Eshu.
+- **Follow-up (code):** harden `retirePriorPublished` to dedupe on a normalized slug/sku key, not exact title, so future republishes can't leave hollow twins live.
+- **Owner to close:** Operator (first sale) + build thread (slug-dedupe hardening)
 
 ---
 
