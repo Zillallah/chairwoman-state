@@ -151,7 +151,7 @@ ChairWoman
 | iCloud+ 2TB | $9.99 | Active (4yr pre-existing) | Keep |
 | Squarespace (queendommanagement.com) | — | Active | Keep; repurpose as authority hub |
 | Blotato | $29.99 | Active since June 2026 | Keep; **wire to actual content flow** |
-| ManyChat Pro | $15+ | Active (signed up this thread) | Keep — funnel automation |
+| ManyChat Essentials | $29.00 | Active | Keep — funnel automation. **Shared: No Dirty Bins + Credit Quing** (No Dirty Bins split to be updated later) |
 | Stripe | $0 + 2.9%+$0.30/txn | Active | Payment processor — no monthly fee |
 | ChatGPT Plus | $20 | Active | Keep |
 | Gemini (Google AI Pro) | $20 | Active | Keep |
@@ -166,6 +166,8 @@ ChairWoman
 **Higgsfield — DECLINED 2026-06-11:** offered a "personal 55% OFF" Ultra plan at ~$70/mo **billed annually (~$840 upfront)**. Declined: breaks the no-annual-prepay rule and isn't wired into the content loop yet. Revisit *monthly* once content is flowing + first CQ sale lands.
 
 **Active content stack:** Heygen $29 + ElevenLabs $22 + Blotato $29.99 = **$80.99/mo**. Runway $35 drops off after 6/29.
+
+> ✅ Updated 2026-06-15: ManyChat corrected to **Essentials $29/mo** (was tracked as Pro $15+), **shared across No Dirty Bins + Credit Quing** for now; operator to split out the No Dirty Bins allocation later.
 
 > ✅ Confirmed 2026-06-11: ManyChat **Pro** ($15+/mo); Quo **$21/mo**; Stripe **$0/mo** + 2.9%+$0.30/txn; Gemini **$20/mo**. "Google AI" line **removed** — operator didn't recognize the charge.
 
