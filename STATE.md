@@ -42,7 +42,7 @@ ChairWoman is an autonomous multi-business operating system. Completion target:
 | Item | Status | Notes |
 |---|---|---|
 | ChairWoman UI on Vercel | Live | Session Room ambassadors at 300px rail / 720px stage |
-| 8 Ambassadors with idle-loop videos | Live | Mansa Musa ACTIVE, 7 others STUB |
+| 8 Ambassadors with idle-loop videos | Live | Mansa Musa + Eshu + Ogun + **Santiago** ACTIVE (Santiago promoted for Latrobe), rest STUB |
 | Quo phone 442-255-6585 | Live | Full IVR + Sona AI + auto-replies, pricing locked $25/$15/$40/$60 |
 | Mansa Musa (CFO) agent | Live | 53 historical agent runs |
 | `unclaimed_money_finder` agent | Live | Under Mansa Musa |
@@ -53,6 +53,7 @@ ChairWoman is an autonomous multi-business operating system. Completion target:
 | **Credit Quing product-builder agent** | **Live** | Successfully generated all 10 kits 2026-06-11 with hard gates passing |
 | **Credit Quing 10-SKU catalog (generated assets)** | **Built, packaged, in repo** | 10 kits content-verified 2026-06-11; flagship guide narrative + letter library both present (~180k chars); clickable Contents; transparent CQ logo. |
 | 3 spec gym sites on Vercel | Live | Athlos, Alpha Omega, Rebirth. **0% conversion to date.** |
+| **Latrobe (Ashe master builder) agent** | **Built** | Elevated `website_builder` → chartered/docketed agent under Santiago (now ACTIVE). `build_engagements`/`build_sections` tables; B.U.I.L.D loop with doctrine lint hard-stop; never auto-publishes. Docket seeded (Credit Quing rebuild + 3 spec builds). `website_builder` kept as alias. |
 | Outreach Tracker spreadsheet | Live | `~/iCloud/2026/The AI Consulting Group/Outreach Tracker.xlsx` |
 | `PRODUCT_AGENT_STANDARD.md` | Live | Binding operating standard for agents |
 | Vault repo (`operators-second-brain`) | Live | 14 files cached, 1hr TTL |
@@ -120,7 +121,8 @@ ChairWoman
 ├── Oshun (CXO) — STUB
 ├── Amanirenas (CGO) — STUB
 ├── Ma'at (CLO) — STUB
-└── Santiago (CTO) — STUB
+└── Santiago (CTO) — ACTIVE
+    └── Latrobe (Ashe master builder)  ✅ built (dormant data; ships via review)
 ```
 
 ---
