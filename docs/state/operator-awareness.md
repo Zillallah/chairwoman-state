@@ -52,7 +52,7 @@ Net-positive lens (revenue must exceed cost-to-obtain, surfaced per stream) · *
 - **Storefront:** /credit-quing live; 10-SKU catalog; /api/checkout → live Stripe sessions; auto-delivery via webhook. Products persisted in Supabase (product_options → published_products); generate ONCE per product (one high-max_tokens call; never resend-loop — that drained API balance).
 - **Content stack:** Forge (caption gen, Quing voice) → ElevenLabs VO + HeyGen avatar video → **Blotato** ($29.99/mo, 9-platform). Higgsfield/Runway B-roll. Only YouTube currently auto-publishes; **Blotato fan-out + ManyChat comment-to-letter funnel still being wired**.
 - **Compliance (LOCKED, enforced pre-post):** education/self-help only · FCRA-grounded · NO guarantees / score promises / "delete debt" · "credit-education company, not a credit-repair organization" · results vary · not legal/financial advice · `mediaContainsSyntheticContent:true` on every AI post.
-- **Accounts:** IG @thecreditquing (primary), FB Cash Flow Queen, IG @dapper_diva (secondary). **⚠ @thecreditquing currently flagged by Meta "can't share links" — restriction ends Jul 16 2026; review requested.**
+- **Accounts:** IG @thecreditquing (primary), FB Cash Flow Queen, IG @dapper_diva (secondary). Note: @thecreditquing occasionally gets a Meta "can't share links" flag (the notice shows a Jul 16 2026 end date), but per operator it **clears same day** on review — NOT a real funnel blocker.
 
 ## 6. Other brands (quick)
 - **Super Clean Bins / GreenEscapes / Cash Flow Queen** — Tier-1 Queendom brands; all must be automated day 1; not yet launched.
@@ -82,7 +82,6 @@ Net-positive lens (revenue must exceed cost-to-obtain, surfaced per stream) · *
 | Date | Event | Why it matters |
 |---|---|---|
 | **~Jul 31, 2026** | **SDI maximum benefit period ends** | Largest income cliff — cashflow #1 |
-| **Jul 16, 2026** | IG @thecreditquing link-share restriction ends | Credit Quing funnel blocked until then |
 | **~Aug 25, 2026** | MCM 90-day reinstatement window expires | Credit defense (MARSHALL) |
 | **Aug 31, 2026** | Carnival Platinum status deadline (75 pts) | Personal/loyalty (low TCW priority) |
 | **2026** | AL tax deed quiet-title filing (AL §40-10-82 3-yr possession; acquired 12/27/2023) | Protect tax-deed asset |
@@ -103,12 +102,11 @@ Blotato $29.99/mo · HeyGen · ElevenLabs · Higgsfield · Runway · NinjaTrader
 2. **Supabase keep-alive** before any client Supabase integration goes live.
 3. **Stripe Payment Link MVP** — first Credit Quing sale.
 4. Credit Quing autonomous posting — Blotato fan-out + ManyChat funnel + status surface.
-5. @thecreditquing Meta restriction — review request / mitigation (until Jul 16).
-6. Rebirth Lifting Club **v6** rebuild (transformation card + video assessment).
-7. Proactive Council feed; wire other ambassadors with direct/feedback surface.
-8. MBE/WBE/CA-DGS certs (gov track, 12–18mo — start paperwork now).
-9. Backer POC program (P0–P2 per dispatch).
-10. Super Clean Bins / GreenEscapes / Cash Flow Queen — automated launch builds.
+5. Rebirth Lifting Club **v6** rebuild (transformation card + video assessment).
+6. Proactive Council feed; wire other ambassadors with direct/feedback surface.
+7. MBE/WBE/CA-DGS certs (gov track, 12–18mo — start paperwork now).
+8. Backer POC program (P0–P2 per dispatch).
+9. Super Clean Bins / GreenEscapes / Cash Flow Queen — automated launch builds.
 
 ---
 _Source of truth for cross-thread operator context. Update as ventures/dates change. Credit/collections detail lives with the MARSHALL agent; financials with Mansa Musa._
