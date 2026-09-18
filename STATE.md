@@ -67,6 +67,7 @@ ChairWoman is an autonomous multi-business operating system. Completion target:
 | **10-SKU Credit Quing product catalog** ✅ **GENERATED + PACKAGED + VERIFIED (2026-06-11)** | Storefront wiring (Gumroad — per dispatch), checkout, payment processor, first product launched. **NOTE:** Flagship ($497 Greene Process) narrative **VERIFIED RESTORED 2026-06-11** (independent DB read): all six Greene Process sections present before the 24-letter library; body ~180k chars. **All 10 content-verified ready to publish.** |
 | **Super Clean Bins content batch** | 12 captions + 8 mascot images ready; need Heygen spokesperson video + Blotato wired for auto-posting |
 | **Marshall (credit-repair agent)** | Charter complete. **Build thread wrote independent Codex-ready dispatch (functionally equivalent to mine in docs/dispatches/).** Use theirs as execution path; mine becomes architectural reference. |
+| **GCG/BHF Government Contracting board** | Built on branch `feat/govcon-board`. Needs: run `supabase/migrations/phase_govcon_board.sql`, set `SAM_API_KEY`, merge. 508/508 tests green, build clean. Board at `/govcon`. |
 | **Brand kit assets in iCloud** | Logos, door-hangers, before/after photos for SCB ready; need to be used in content automation |
 
 ---
@@ -110,7 +111,11 @@ ChairWoman
 │   ├── federal_benefits_finder       ⚠️  live but buggy
 │   ├── action_execution_layer        ⚠️  live but buggy
 │   ├── process_monthly_statements    ✅ live
-│   └── Marshall (credit-repair)      📋 designed, not built
+│   ├── Marshall (credit-repair)      📋 designed, not built
+│   └── Government Contracting Lead   🆕 built on feat/govcon-board
+│       ├── govcon_scanner            🆕 SAM.gov daily scan (weekdays 06:30 PT)
+│       ├── govcon_assessor           🆕 100-pt GO/NO-GO, hard gates override
+│       └── govcon_registrations      🆕 SAM expiry + blocker watch (Mondays)
 │
 ├── Eshu (CMO) — STUB
 │   └── content_generator             📋 specced, not built

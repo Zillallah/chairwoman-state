@@ -131,3 +131,35 @@
 - Corrected subscription ledger from operator signup data: Heygen Creator $29 ACTIVE (billing 6/30), ElevenLabs Creator $22 ACTIVE (started 5/30; was mis-tracked Starter $5), Gemini $10→$20. Removed Heygen/ElevenLabs from "to add" + "blocked"; SCB now gated only by the content pipeline.
 - Closed the Heygen+ElevenLabs subscription loop.
 - Declined the Higgsfield annual 55%-off offer (annual prepay breaks locked rule; premature spend).
+
+## 2026-09-18 — Claude (Cowork, GCG thread): government contracting lane built into TCW
+
+**What:** GCG/BHF government contracting added as a standing lane under Mansa Musa —
+team lead `govcon-lead`, three agents, two tables, a board at `/govcon`, 47 tests.
+
+**Why:** GCG was being run out of a chat thread, an iCloud folder and two pinned
+artifacts. The operator could not find the dashboard on returning to the thread, and
+asked (not for the first time) that it live inside TCW instead of beside it.
+`opportunity_finder` exists to surface lanes worth systematizing; federal contracting
+is the first one to graduate, so it got the standing-lane treatment rather than a
+separate system.
+
+**Built:**
+- `supabase/migrations/phase_govcon_board.sql` — team lead, 3 agents, `govcon_entities`,
+  `govcon_solicitations`, seeded with the three real registrations.
+- `lib/agents/govcon/scoring.ts` — the 100-point model and hard gates, PURE.
+- `lib/agents/govcon/findings.ts` — registration window rules, PURE.
+- `lib/agents/govcon/{profile,scanner,assessor,registrations}.ts` — I/O wrappers.
+- `app/govcon/page.tsx` + `app/api/govcon/board/route.ts`.
+- `__tests__/govcon/` — 47 tests.
+
+**Design decision worth keeping:** the model judges the nine factors, the pure scorer
+makes the decision. Thresholds and the hard-gate override stay deterministic and
+testable, so a persuasive solicitation cannot talk the system into a GO.
+
+**Found along the way:** 2 test files were already failing on the operator's machine
+under Node 20 (`@supabase/realtime-js` needs native WebSocket). Everything passes on
+Node 26, which is installed. Not caused by this work, but it means `npm test` on the
+default node has been misleading.
+
+**Open at close:** migration not yet run; `SAM_API_KEY` not set; branch not merged.
